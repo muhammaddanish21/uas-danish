@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background: radial-gradient(circle at top, #ffe6ef, #fff8f1);
+    min-height: 100vh;
+}
+
+/* WRAPPER */
+.container {
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    gap: 25px;
+}
+
+/* EVENT CARD */
+.event-info {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    padding: 30px;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(255, 153, 204, 0.25);
+    text-align: center;
+}
+
+.event-info h1 {
+    font-size: 30px;
+    color: #c2185b;
+}
+
+.event-info p {
+    color: #555;
+    margin: 8px 0;
+}
+
+/* FORM */
+.form-section {
+    background: linear-gradient(145deg, #fff, #fff5f8);
+    padding: 25px;
+    border-radius: 24px;
+    box-shadow: 0 15px 35px rgba(240, 98, 146, 0.2);
+}
+
+.form-section h2 {
+    text-align: center;
+    color: #ad1457;
+    margin-bottom: 20px;
+}
+
+.form-section input,
+.form-section select {
+    width: 100%;
+    padding: 14px;
+    margin-top: 14px;
+    border-radius: 14px;
+    border: 1px solid #f3c0d3;
+    background: #fff;
+    transition: 0.3s;
+}
+
+.form-section input:focus,
+.form-section select:focus {
+    outline: none;
+    border-color: #ff8ab1;
+    box-shadow: 0 0 0 3px rgba(240, 98, 146, 0.25);
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 16px;
+    border: none;
+    background: linear-gradient(135deg, #ff689a, #ff9a9e);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(240, 98, 146, 0.4);
+}
+
+/* MESSAGE */
+#message {
+    margin-top: 12px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* DATA */
+.data-section {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 24px;
+}
+
+.data-section h2 {
+    text-align: center;
+    color: #880e4f;
+}
+
+.data-section ul {
+    padding: 0;
+    margin-top: 15px;
+}
+
+.data-section li {
+    list-style: none;
+    padding: 14px 18px;
+    margin-top: 10px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #ffe4ec, #fff);
+    color: #6a1b47;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .event-info h1 {
+        font-size: 22px;
+    }
+
+    button {
+        font-size: 15px;
+    }
+}

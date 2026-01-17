@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Event Kampus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- Landing Page -->
+    <section class="event-info">
+        <h1>Seminar Teknologi Web 2026</h1>
+        <p>Event seminar untuk membahas perkembangan teknologi web modern.</p>
+        <p><strong>Tanggal:</strong> 20 Februari 2026</p>
+        <p><strong>Lokasi:</strong> Aula Kampus</p>
+    </section>
+
+    <!-- Form Pendaftaran -->
+    <section class="form-section">
+        <h2>Form Pendaftaran</h2>
+        <form id="registerForm">
+            <input type="text" id="nama" placeholder="Nama Lengkap">
+            <input type="email" id="email" placeholder="Email">
+            <input type="text" id="hp" placeholder="Nomor HP">
+
+            <select id="kategori">
+                <option value="">-- Pilih Kategori --</option>
+                <option value="Mahasiswa">Mahasiswa</option>
+                <option value="Umum">Umum</option>
+            </select>
+
+            <button type="submit">Daftar</button>
+        </form>
+
+        <p id="message"></p>
+        <p><strong>Jumlah Peserta:</strong> <span id="jumlah">0</span>/50</p>
+    </section>
+
+    <!-- Data Peserta -->
+    <section class="data-section">
+        <h2>Daftar Peserta</h2>
+        <ul id="listPeserta"></ul>
+    </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
